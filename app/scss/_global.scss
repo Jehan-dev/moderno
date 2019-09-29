@@ -25,15 +25,13 @@ li {
 }
 
 body {
-    font-family: 'Roboto-Regular',
-        sans-serif;
+    font-family: 'Roboto-Regular', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
-
-
 
 .wrapper {
     display: flex;
@@ -110,5 +108,17 @@ body {
 
             }
         }
+    }
+}
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: '\f105';
+        font-family: 'icomoon';
+        position: absolute;
+        color: $green;
+        left: 0;
+        font-size: 14px;
     }
 }
